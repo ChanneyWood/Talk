@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#e4e9eb"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <!--<com.dk.view.patheffect.PathTextView-->
+        <!--android:id="@+id/path"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"/>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <EditText
+            android:textCursorDrawable="@drawable/color_cursor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLength="10"
+            android:id="@+id/et_birth_text"
+            android:hint="输入你的祝福"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/birth_show"
+            android:text="查看效果"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/birth_submit"
+            android:text="提交"/>
+
+    </LinearLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <yanzhikai.textpath.SyncTextPathView
+            android:id="@+id/birth_stpv_2017"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:duration="12000"
+            app:showPainter="true"
+            app:text="2017"
+            app:textInCenter="true"
+            app:textSize="60sp"
+            android:layout_weight="1"
+            />
+    </ScrollView>
+
+</LinearLayout>

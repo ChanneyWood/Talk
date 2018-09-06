@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e4e9eb"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:orientation="horizontal"
+        android:id="@+id/my_layout_name"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/my_login_tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:text="  用户名  " />
+
+        <EditText
+            android:id="@+id/my_sign_name"
+            android:textCursorDrawable="@drawable/color_cursor"
+            android:layout_toRightOf="@+id/my_login_tv_name"
+            android:layout_marginLeft="30dp"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        android:id="@+id/my_layout_password"
+        app:layout_constraintTop_toBottomOf="@id/my_layout_name">
+
+        <TextView
+            android:id="@+id/my_login_tv_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:text="     密码    " />
+
+        <EditText
+            android:id="@+id/my_sign_password"
+            android:layout_width="220dp"
+            android:textCursorDrawable="@drawable/color_cursor"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/my_login_tv_password"
+            android:layout_marginLeft="30dp"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:id="@+id/my_sign_in_layout"
+        app:layout_constraintTop_toBottomOf="@id/my_layout_password">
+
+        <Button
+            android:layout_weight="1"
+            android:id="@+id/my_btn_sign"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="70dp"
+            android:text=" 登录 " />
+
+        <Button
+            android:layout_weight="1"
+            android:id="@+id/my_btn_register"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/my_btn_sign"
+            android:layout_marginLeft="50dp"
+            android:text=" 注册 " />
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f7f8fa"
+    android:orientation="horizontal">
+    <LinearLayout
+        android:layout_width="4dp"
+        android:layout_height="match_parent"></LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/select_cell_name"
+            android:layout_marginTop="4dp"
+            android:textColor="@color/textColor_svprogresshuddefault_msg"
+            android:text="姓名"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/select_cell_comment"
+            android:layout_marginTop="4dp"
+            android:textColor="@color/textColor_svprogresshuddefault_msg"
+            android:text="评论"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="16dp"></LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/textColor_svprogresshuddefault_msg"
+            android:text="2018年3月12日 13:54:22"
+            android:id="@+id/select_cell_time"/>
+    </LinearLayout>
+
+</LinearLayout>

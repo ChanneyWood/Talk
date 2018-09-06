@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#e4e9eb">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.tuesda.walker.circlerefresh.CircleRefreshLayout
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            app:AniBackColor="#90a4ae"
+            app:AniForeColor="#ffffffff"
+            android:id="@+id/circlefreshlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+
+            <com.example.a12579.myapplication.delete.LoadMoreListView
+                android:id="@+id/dele_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:cacheColorHint="#000000"
+                android:divider="#e4e9eb"
+                android:dividerHeight="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"></com.example.a12579.myapplication.delete.LoadMoreListView>
+
+        </com.tuesda.walker.circlerefresh.CircleRefreshLayout>
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/dele_linear_btn"
+        android:layout_marginBottom="15dp"
+        android:layout_marginEnd="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/dele_cell_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:src="@drawable/add"
+            app:elevation="5dp"
+            app:pressedTranslationZ="5dp"
+            app:fabSize="normal"
+            />
+    </LinearLayout>
+    <!--<LinearLayout-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/dele_linear_btn"-->
+        <!--android:layout_marginBottom="15dp"-->
+        <!--android:layout_marginEnd="15dp"-->
+        <!--app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--app:layout_constraintEnd_toEndOf="parent">-->
+        <!--<Button-->
+            <!--android:id="@+id/dele_cell_add"-->
+            <!--android:layout_width="70dp"-->
+            <!--android:layout_height="70dp"-->
+            <!--android:background="@drawable/add_button"-->
+            <!--android:textAllCaps="false"-->
+            <!--/>-->
+
+        <!--&lt;!&ndash;<android.support.design.widget.FloatingActionButton&ndash;&gt;-->
+        <!--&lt;!&ndash;android:id="@+id/button"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_gravity="center"&ndash;&gt;-->
+        <!--&lt;!&ndash;fab:elevation="6dp"&ndash;&gt;-->
+        <!--&lt;!&ndash;fab:pressedTranslationZ="12dp"&ndash;&gt;-->
+        <!--&lt;!&ndash;fab:fabSize="normal"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:src="@drawable/add" />&ndash;&gt;-->
+    <!--</LinearLayout>-->
+    <!--<ListView-->
+        <!--android:id="@+id/dele_list"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--app:layout_constraintEnd_toEndOf="parent"></ListView>-->
+
+
+</android.support.constraint.ConstraintLayout>

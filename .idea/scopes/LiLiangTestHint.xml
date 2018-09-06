@@ -1,0 +1,3 @@
+<component name="DependencyValidationManager">
+  <scope name="LiLiangTestHint" pattern="file[app]:*/" />
+</component>

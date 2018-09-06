@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:background="#e4e9eb"
+    android:orientation="vertical">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/tmp_layout">
+        <ImageView
+            android:id="@+id/birth_img_gezi"
+            android:layout_marginTop="280dp"
+            android:layout_marginLeft="180dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/zhufu"/>
+
+    </FrameLayout>
+    <com.linroid.filtermenu.library.FilterMenuLayout
+        android:id="@+id/filter_menu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:elevation="8dp"
+        custom:fm_expandedRadius="96dp"
+        custom:fm_collapsedRadius="24dp"
+        custom:fm_centerBottom="50dp"
+        custom:fm_centerRight="50dp"
+        custom:fm_primaryColor="#90a4ae"
+        custom:fm_primaryDarkColor="#455a64">
+    </com.linroid.filtermenu.library.FilterMenuLayout>
+
+</FrameLayout>

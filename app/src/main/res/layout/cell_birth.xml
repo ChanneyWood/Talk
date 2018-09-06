@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <yanzhikai.textpath.SyncTextPathView
+            android:id="@+id/birth_cell_stpv_2017"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:duration="12000"
+            app:showPainter="true"
+            app:text="2017"
+            app:textInCenter="true"
+            app:textSize="60sp"
+            android:layout_weight="1"
+            />
+
+
+    </ScrollView>
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cell_birth_name_hint"
+            android:text="From:"/>
+        <TextView
+            app:layout_constraintStart_toEndOf="@id/cell_birth_name_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cell_birth_name"
+            android:text="名字"/>
+        <TextView
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cell_birth_time"
+            android:text="时间"/>
+    </android.support.constraint.ConstraintLayout>
+</LinearLayout>
